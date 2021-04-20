@@ -4,7 +4,7 @@ settings:
   aggregator: consolidator
   verbose: false
   env:
-    application_hostname: test_confluence_instance.atlassian.com   # Confluence DC hostname without protocol and port e.g. test-confluence.atlassian.com or localhost
+    application_hostname: confs-loadb-1bytspbypdfbc-1945029135.us-west-2.elb.amazonaws.com
     application_protocol: http      # http or https
     application_port: 80            # 80, 443, 8080, 1990, etc
     secure: True                    # Set False to allow insecure connections, e.g. when using self-signed SSL certificate
@@ -17,7 +17,7 @@ settings:
     ramp-up: 5m                     # time to spin all concurrent users
     total_actions_per_hour: 20000
     WEBDRIVER_VISIBLE: False
-    JMETER_VERSION: 5.2.1
+    JMETER_VERSION: 5.4.1
     LANGUAGE: en_US.utf8
     allow_analytics: Yes            # Allow sending basic run analytics to Atlassian. These analytics help us to understand how the tool is being used and help us to continue to invest in this tooling. For more details please see our README.
     # Action percentage for JMeter and Locust load executors

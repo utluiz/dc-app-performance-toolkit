@@ -188,3 +188,22 @@ To help us continue improving the Toolkit, we’d love you to keep these analyti
 
 ## Running Taurus
 Navigate to [docs](docs) folder and follow instructions.
+
+# Jmeter plugins manager
+
+- https://jmetervn.com/2016/12/14/how-to-install-plugins-in-jmeter-3-x-via-command-line/
+
+```shell
+cp ./jmeter-plugins-manager-1.6.jar ~/.bzt/jmeter-taurus/5.2.1/bin/lib/ext/
+cd ~/.bzt/jmeter-taurus/5.2.1
+java -cp ./lib/ext/jmeter-plugins-manager-1.6.jar org.jmeterplugins.repository.PluginManagerCMDInstaller
+```
+
+# Jmeter missing cmdrunner
+
+```shell
+cd ~/.bzt/jmeter-taurus/5.2.1/lib
+wget https://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.2/cmdrunner-2.2.jar -O cmdrunner-2.2.jar
+```
+
+# Jmeter Concurrency Thread Group
